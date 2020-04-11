@@ -1,0 +1,63 @@
+/**
+* Type scale adopted from the following
+* Google's Material Design Guidelines (https://material.io/design/typography/the-type-system.html#type-scale)
+* Gov.uk Design System (https://design-system.service.gov.uk/styles/typography/#headings)
+**/
+
+.heading-xxxl {
+    font-family: NotoSans-Medium;
+    font-size: 9.5rem;
+    letter-spacing: -0.15rem;
+}
+
+.heading-xxl {
+    font-family: NotoSans-Medium;
+    font-size: 5.9rem;
+    letter-spacing: -0.05rem;
+}
+
+.heading-xl {
+    font-family: NotoSans-SemiBold;
+    font-size: 4.8rem;
+    letter-spacing: 0;
+    line-height: 1.04167;
+}
+
+.heading-l {
+    font-family: NotoSans-SemiBold;
+    font-size: 3.4rem;
+    letter-spacing: 0.025rem;
+}
+
+.heading-m {
+    font-family: NotoSans-Medium;
+    font-size: 2.4rem;
+    letter-spacing: 0;
+}
+
+.heading-s {
+    font-family: NotoSans-Medium;
+    font-size: 2rem;
+    letter-spacing: 0.015rem;
+}
+
+button {
+    font-family: NotoSans-Medium;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    letter-spacing: 0.125rem;
+}
+
+// Smaller than headlines. User for medium emphasis and for text that is shorter in length
+.subtitle {
+    font-family: NotoSans-Regular;
+    font-size: 1.6rem;
+    letter-spacing: 0.015rem;
+}
+
+.body {
+    font-family: NotoSans-Regular;
+    font-size: 1.4rem;
+    letter-spacing: 0.025rem;
+    line-height: 1.5; // accessibility purposes. helps people with low vision conditions
+}
