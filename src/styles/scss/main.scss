@@ -1,3 +1,4 @@
+@import "cssReset.scss";
 @import "mixins";
 @import "variables";
 
@@ -9,7 +10,6 @@
 
 html,
 body {
-  height: 100vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -22,5 +22,4 @@ body {
 
 #root {
   height: 100%;
-  background-color: yellow;
 }

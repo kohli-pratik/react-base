@@ -15,10 +15,6 @@ module.exports = {
                 use: ['html-loader'],
             },
             {
-                test: /\.s[ac]ss$/i,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
-            },
-            {
                 test: /\.(jpg|png|gif|svg|ico)$/,
                 use: { loader: 'url-loader' },
             },
@@ -28,20 +24,15 @@ module.exports = {
             },
         ],
     },
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
-    },
     plugins: [
         new HtmlWebPackPlugin({
             template: './public/index.html',
             filename: './index.html',
         }),
     ],
-    devServer: {
-        contentBase: path.join(__dirname, 'dist'),
-        port: process.env.PORT || 3000,
-        host: process.env.HOST || 'localhost',
-        historyApiFallback: true,
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        // publicPath: path.resolve(__dirname, 'build'),
+        filename: '[name].bundle.js',
     },
 };
