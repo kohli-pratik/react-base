@@ -1,5 +1,5 @@
 import React from 'react';
 
-const SampleFeature = () => (<></>);
+const SampleFeature = () => (<div>Sample Feature</div>);
 
 export default SampleFeature;

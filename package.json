@@ -6,7 +6,9 @@
   "scripts": {
     "start": "HOST=$HOST PORT=$PORT webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "test-silent": "jest --watchAll --silent",
+    "test-coverage": "jest --watchAll=false --silent --coverage"
   },
   "author": "Pratik H Kohli",
   "license": "ISC",
@@ -32,6 +34,31 @@
       "last 1 firefox version",
       "last 1 safari version",
       "ie 11"
+    ]
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|svg|otf|ttf|woff)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    },
+    "coverageReporters": [
+      "text",
+      "html"
     ]
   },
   "devDependencies": {
