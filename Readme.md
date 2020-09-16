@@ -6,3 +6,4 @@ This is built using minimalistic but key configuration/structure that can be use
 * State management - Redux
 * Styling - Sass
 * Linting - ESlint
+* Git hooks - Pre-commit
