@@ -6,9 +6,9 @@
   "scripts": {
     "start": "HOST=$HOST PORT=$PORT webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "test": "jest --watchAll",
-    "test-silent": "jest --watchAll --silent",
-    "test-coverage": "jest --watchAll=false --silent --coverage"
+    "test": "jest --watchAll --clearCache",
+    "test-silent": "jest --watchAll --silent --clearCache",
+    "test-coverage": "jest --watchAll=false --silent --coverage --clearCache"
   },
   "author": "Pratik H Kohli",
   "license": "ISC",
