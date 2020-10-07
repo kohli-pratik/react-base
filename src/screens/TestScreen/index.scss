@@ -1,6 +1,9 @@
 .main-container {
-    padding: 3rem;
+    padding: 20px;
     &-heading {
-        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 20px;
     }
 }

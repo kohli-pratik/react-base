@@ -1,12 +1,13 @@
-@import "cssReset.scss";
-@import "mixins";
-@import "variables";
+@import 'cssReset.scss';
+@import 'typeScale.scss';
+@import 'mixins';
+@import 'variables';
 
-@include fontFace("GalanoGrotesque", "GalanoGrotesque-Regular");
-@include fontFace("GalanoGrotesque-Light", "GalanoGrotesque-Light");
-@include fontFace("GalanoGrotesque-Medium", "GalanoGrotesque-Medium");
-@include fontFace("GalanoGrotesque-SemiBold", "GalanoGrotesque-SemiBold");
-@include fontFace("GalanoGrotesque-Bold", "GalanoGrotesque-Bold");
+@include fontFace('NotoSans', 'NotoSans-Regular');
+@include fontFace('NotoSans-Light', 'NotoSans-Light');
+@include fontFace('NotoSans-Medium', 'NotoSans-Medium');
+@include fontFace('NotoSans-SemiBold', 'NotoSans-SemiBold');
+@include fontFace('NotoSans-Bold', 'NotoSans-Bold');
 
 html,
 body {
@@ -15,7 +16,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-size: 62.5%;
-  font-family: GalanoGrotesque;
+  font-family: NotoSans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
