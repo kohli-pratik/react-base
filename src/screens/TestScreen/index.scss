@@ -1,9 +1,7 @@
 .main-container {
     padding: 20px;
-    &-heading {
-        margin-bottom: 20px;
-    }
-    p {
-        margin-bottom: 20px;
+
+    * {
+        margin-bottom: 25px;
     }
 }
