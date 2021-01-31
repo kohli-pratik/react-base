@@ -4,7 +4,7 @@
   "description": "React base",
   "main": "index.js",
   "scripts": {
-    "start": "HOST=$HOST PORT=$PORT webpack-dev-server --open --config webpack.dev.js",
+    "start": "HOST=$HOST PORT=$PORT webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "test": "jest --clearCache",
     "test-watchAll": "jest --watchAll --clearCache",
